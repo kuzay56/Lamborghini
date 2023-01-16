@@ -7,3 +7,14 @@ const swiper = new Swiper('.swiper', {
 		prevEl: '.swiper-button-left',
 	},
 });
+
+
+let map;
+function initMap() {
+	map = new google.maps.Map(document.getElementById("map"), {
+		center: { lat: 37.231469756285684, lng: -8.628402703988792 },
+		zoom: 13,
+	});
+}
+
+window.initMap = initMap;
